@@ -1,0 +1,39 @@
+.hand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 12px;
+  border-radius: 12px;
+  transition: box-shadow 0.3s ease;
+}
+
+.hand-active {
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+.hand-label {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.hand-cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 30px; /* compensate for negative margin on last card */
+  min-height: 140px;
+}
+
+.hand-value {
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 4px 14px;
+  border-radius: 20px;
+  min-width: 40px;
+  text-align: center;
+}
