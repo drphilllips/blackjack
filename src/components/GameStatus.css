@@ -1,0 +1,96 @@
+.game-status {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 20px;
+}
+
+.chips-display {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.chips-icon {
+  color: #e8b931;
+  font-size: 14px;
+}
+
+.chips-amount {
+  color: #e8b931;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.current-bet {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+  margin-left: 8px;
+  padding: 2px 10px;
+  border-radius: 12px;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.results-display {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.result-text {
+  font-size: 20px;
+  font-weight: 700;
+  animation: fadeInUp 0.4s ease-out;
+}
+
+.result-win {
+  color: #4ade80;
+}
+
+.result-lose {
+  color: #f87171;
+}
+
+.result-push {
+  color: #fbbf24;
+}
+
+.stats-bar {
+  display: flex;
+  gap: 20px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.stat {
+  padding: 2px 10px;
+  border-radius: 12px;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.stat-win {
+  color: #4ade80;
+}
+
+.stat-lose {
+  color: #f87171;
+}
+
+.stat-push {
+  color: #fbbf24;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

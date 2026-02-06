@@ -1,0 +1,47 @@
+.card-wrapper {
+  width: 100px;
+  height: 140px;
+  perspective: 800px;
+  display: inline-block;
+  margin-right: -30px;
+  opacity: 0;
+  transform: translateY(-60px) scale(0.7);
+  transition: opacity 0.3s ease-out, transform 0.4s ease-out;
+}
+
+.card-wrapper.dealt {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease-in-out;
+  transform-style: preserve-3d;
+}
+
+.card-wrapper.flipped .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.card-face svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.card-back {
+  transform: rotateY(180deg);
+}
